@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        let a = 10; 
+        let c = 10 ;//work here
+        {
+            let b = 20 ; //can't use outside of this scope
+        }
+        //Conditional statement : if else 
+        let age = 9 ;
+        //you have to decide the person can vote or not
+        if(age<12){
+            let c = 10 ;//value is valid only this block
+            console.log("Age is too less to vote");
+        }
+        else if(age <18 ){//nested if & add as many as statement you need 
+            console.log("You can't vote");
+        } 
+        else {
+            console .log("You can vote");
+        }
+
+        // console.log(c);
+
+        // Switch Statement :
+
+        let cups = 52; 
+        switch (cups) {
+            case 10:
+                console.log("You have 10 cups");
+                
+                break;
+            case 41:
+                console.log("You have 41 cups");
+                break;
+            case 42:
+                console.log("You have 42 cups");
+            default:
+                console.log("Unable to find number of cups");
+                break;
+        }
+        let d = 121;
+        console.log(d);
+    </script>
+</body>
+</html>
