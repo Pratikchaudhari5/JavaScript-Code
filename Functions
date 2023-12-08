@@ -1,0 +1,57 @@
+// HTML page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+   
+   
+
+
+
+</body>
+<Script src="5.functions.js"> </Script>
+</html>
+--------------------------------------------------------------------------------
+
+//JS Page 
+
+console.log("This is about functions");
+
+//Create function
+function mySubjects(subject,message){
+console.log(subject+" : " +message);
+}
+
+function myFunction(a,b,c){
+     let sum = a+b+c;
+     return sum;    
+}
+
+let subj = "CN";
+let subj2 = "DBMS";;
+let subj3 = "SE";
+let subj4 = "python";
+let subj5 = "web Development";
+let msg = "This is your subject";
+
+//call function
+mySubjects(subj,msg);//known as arguments
+mySubjects(subj2,msg);
+mySubjects(subj3,msg);
+mySubjects(subj4,msg);
+mySubjects(subj5,msg);
+
+// console.log(subj +": This is your subject.");
+// console.log(subj2 +": This is your subject.");
+// console.log(subj3 +": This is your subject.");
+// console.log(subj4 +": This is your subject.");
+// console.log(subj5 +": This is your subject.");
+//to reduce this much line of code we use function
+
+//Returning a value
+let returnVal = myFunction(1,2,3);
+console.log(returnVal);
