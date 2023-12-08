@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes</title>
+</head>
+<body>
+    <div class="container">This is a container</div>
+
+    <Script>
+        //Declare primitive datatypes in js
+        let myVar = 34;
+        let myVar2 = "Pratik";
+        let myVar3 = true;//boolean
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        //Objects // Stores key and value pairs
+        let employee={
+            name : "Pratik",
+            Sal : 1000000000,
+            YOE : 2,
+            "able to relocate": true,
+        }
+        console.log(employee);
+
+        console.log(employee["Sal"]);//Same
+        console.log(employee["YOE"]);
+        console.log(employee.Sal);//Same
+        console.log(employee["able to relocate"]);
+
+
+
+
+        //Arrays
+        //indexing start from 0 
+        //1st way to declare array
+        // let subjects = ["CN", "DBMS", "Software engineering", "DSA"]
+        // console.log(subjects);
+        // console.log(subjects[2]);//print any subject from array
+          
+        //2nd way to declare array
+        let subjects = new Array(1,9,10,4,5,undefined,null);
+       // console.log(subjects.length);//.length for check length
+        console.log(subjects.sort());
+        //new = creating obj
+        subjects.push("This is pushded");//add in array
+        console.log(subjects);
+
+        
+  </Script>
+</body>
+</html>
