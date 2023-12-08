@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    var str = "this is is is is a stirng";
+    console.log(str);
+
+// print the index of sum of char's
+// Or 
+//first occurance
+var position = str.indexOf('is');
+console.log(position);
+
+// Last Occurance 
+var position2 = str.lastIndexOf('is');
+console.log(position2);
+
+//Substring from a string
+var substr = str.slice(1,7);
+console.log(substr);
+
+//Substring other way 
+var substr1 = str.substr(1,3);//3 is no of char we need ot print
+console.log(substr1);
+
+// Replacing the content
+var replaced = str.replace('stirng','pratik');
+console.log(replaced);     
+
+console.log(str);
+//for uppercase and lowercase
+console.log(str.toUpperCase());
+
+console.log(str.toLowerCase());
+
+//concatination use + symbol
+var newString = str.concat('pratik');
+console.log(newString);
+
+//remove extra white spaces
+var strWithWhiteSpaces = "            This contains spaces     " 
+console.log(strWithWhiteSpaces);
+
+console.log(strWithWhiteSpaces.trim());//delete all white space
+
+var char = str.charAt(5);
+console.log(char);
+
+var char2= str.charCodeAt(3);
+console.log(char2);//115 which is encoded
+
+console.log(str[3]);
+
+
+const a = " pratik";// constant now
+// a = "shruti";
+console.log(a);
+
+let a= "a";// assing some variable value like var (use let than var)
+console.log(b);
+
+
+
+
+</script>
+
+    <p>This is paragraph</p>
+</body>
+</html>
